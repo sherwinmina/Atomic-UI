@@ -1,0 +1,40 @@
+$theme: #2572a5;
+$primary: rgb(29, 133, 230);
+$danger: rgb(187, 19, 19);
+
+.button {
+  background: $theme;
+  margin: 1em;
+  color: white;
+  border: none;
+  width: 6em;
+  height: 3em;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($theme, 15%);
+  }
+
+  &.primary {
+    background: $primary;
+    &:hover {
+      background: lighten($primary, 5%);
+    }
+  }
+
+  &.danger {
+    background: $danger;
+    &:hover {
+      background: lighten($danger, 5%);
+    }
+  }
+
+  &.fullWidth {
+    min-width: 80%;
+  }
+
+  &.disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+}
