@@ -12,7 +12,8 @@ class Button extends Component {
       primary: this.props.primary,
       danger: this.props.danger,
       fullWidth: this.props.fullWidth,
-      disabled: this.props.disabled
+      disabled: this.props.disabled,
+      rounded: this.props.rounded
     })
 
     return <button className={className}>{this.props.children}</button>

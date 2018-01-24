@@ -10,7 +10,9 @@ $danger: rgb(187, 19, 19);
   width: 6em;
   height: 3em;
   cursor: pointer;
-
+  &.rounded {
+    border-radius: 20px;
+  }
   &:hover {
     background: lighten($theme, 15%);
   }
