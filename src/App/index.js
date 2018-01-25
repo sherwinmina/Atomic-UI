@@ -11,6 +11,7 @@ class App extends Component {
           <NavBar>
             <div>About</div>
             <div>Work</div>
+            <div>Services</div>
             <div>Contact</div>
           </NavBar>
         </div>

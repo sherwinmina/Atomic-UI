@@ -1,23 +1,30 @@
+@import '../variables/colors.scss';
+@import '../variables/typography.scss';
+
 .Nav {
   height: 100px;
   background: rgb(9, 88, 153);
+  font-family: $my-font;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   .logo {
     flex: 3;
     padding: 12px;
   }
   .navItems {
-    flex: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // flex: 2;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
     align-items: flex-end;
-    color: white;
+    cursor: pointer;
+    color: $white;
     padding: 12px;
     &.active {
       color: red;
+      border-bottom: 2px solid red;
     }
   }
 }
